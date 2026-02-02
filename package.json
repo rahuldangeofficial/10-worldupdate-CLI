@@ -1,0 +1,54 @@
+{
+  "name": "worldupdate",
+  "version": "1.0.0",
+  "description": "CLI tool that crawls 20+ tech news sources and uses AI to filter for impactful content",
+  "author": "Rahul Dange",
+  "license": "MIT",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "worldupdate": "./bin/worldupdate.js"
+  },
+  "scripts": {
+    "start": "node bin/worldupdate.js",
+    "digest": "node bin/worldupdate.js --digest",
+    "postinstall": "chmod +x bin/worldupdate.js 2>/dev/null || true",
+    "prepare": "chmod +x bin/worldupdate.js 2>/dev/null || true"
+  },
+  "keywords": [
+    "cli",
+    "news",
+    "hacker-news",
+    "tech",
+    "ai",
+    "openai",
+    "crawler",
+    "terminal",
+    "digest"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rahuldangeofficial/worldupdate"
+  },
+  "bugs": {
+    "url": "https://github.com/rahuldangeofficial/worldupdate/issues"
+  },
+  "homepage": "https://github.com/rahuldangeofficial/worldupdate#readme",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chalk": "^5.3.0",
+    "cheerio": "^1.0.0-rc.12",
+    "commander": "^12.0.0",
+    "dotenv": "^16.4.0",
+    "openai": "^4.28.0",
+    "ora": "^8.0.1",
+    "rss-parser": "^3.13.0"
+  }
+}
