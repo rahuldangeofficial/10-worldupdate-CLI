@@ -15,8 +15,8 @@ A CLI tool that crawls 20+ tech news sources and uses AI to surface what actuall
 ## Installation
 
 ```bash
-git clone https://github.com/rahuldangeofficial/worldupdate.git
-cd worldupdate
+git clone https://github.com/rahuldangeofficial/10-worldupdate-CLI.git
+cd 10-worldupdate-CLI
 ./install.sh
 ```
 
